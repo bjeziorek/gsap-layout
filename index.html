@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js" defer></script>
+    <script src="index.js" defer></script>
+    <style>
+        .ball {
+
+            position: absolute;
+            z-index: -1;
+            background-color: #00adad;
+            border-radius: 50%;
+            background-image: url('./cat-food-icon.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .ball-1 {
+            width: 100px;
+            height: 100px;
+            left: 170px;
+        }
+
+        .ball-2 {
+            width: 20px;
+            height: 20px;
+            top: 100;
+        }
+
+        .ball-3 {
+            width: 40px;
+            height: 40px;
+            top: 400;
+            left: 300;
+        }
+
+        .header {
+            margin: 10px;
+            opacity: .8;
+            height: 15vh;
+            background-color: rgb(104, 88, 88);
+            border-radius: 20px;
+        }
+
+        .p {
+            top: -25px;
+            left: -25px;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            color: rgb(0, 255, 255);
+            text-shadow: 2px 2px 1px black;
+            font-size: 20px;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        p {
+
+            text-align: center;
+            margin: 15px;
+        }
+
+        aside {
+            color: rgb(0, 255, 255);
+            text-shadow: 2px 2px 1px black;
+            padding: 20px;
+            font-size: 20px;
+
+            margin: 10px;
+            opacity: .8;
+
+            width: 15vw;
+            background-color: rgb(104, 88, 88);
+
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            overflow-y: hidden;
+        }
+
+        main {
+            padding: 50px;
+            position: relative;
+            margin: 10px;
+            opacity: .8;
+
+            flex-grow: 1;
+            background-color: rgb(104, 88, 88);
+
+            border-radius: 20px;
+        }
+
+        footer {
+            margin: 10px;
+            opacity: .8;
+
+            height: 15vh;
+            background-color: #685858;
+
+            border-radius: 20px;
+        }
+
+        .container {
+            font-family: 'Yuji Boku', serif;
+          /*  font-family: 'Tektur', cursive;*/
+            height: 70vh;
+            display: flex;
+            align-content: space-between;
+        }
+
+        nav {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        body {
+            background-color: rgb(41, 41, 41);
+            font-weight: 600;
+            margin: 10px;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        button {
+            font-family: 'Yuji Boku', serif;
+            cursor: pointer;
+            font-size: 35px;
+            padding: 20px;
+            border: 0;
+            background-color: rgba(0, 0, 0, 0);
+            color: rgb(0, 255, 255);
+            text-shadow: 2px 2px 1px black;
+            /*  height: 100%;  // <- to robi, ze linki sa na gorze a nie na srodku Oo */
+
+        }
+.img {
+    color: rgb(207, 186, 166);
+}
+        svg {
+            fill:red;
+            width:100px;
+            height: 100px;
+        }
+        footer {
+            background-image: url('/cat-animal-icon.svg');
+            background-repeat: repeat-x;
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <button class="link-1 btn-1">Cats as teachers</button>
+            <button class="link-2 btn-2">Cat's Love</button>
+            <button class="link-3 btn-3">Cats and Dreams</button>
+        </nav>
+    </header>
+
+    <div class="ball ball-1"></div>
+    <div class="ball ball-2"></div>
+    <div class="ball ball-3"></div>
+
+    <div class="container">
+        <aside class="left">
+            <p>"In ancient times cats were worshipped as gods; they have not forgotten this. - Terry Pratchett"</p>
+            <p>"The smallest feline is a masterpiece. - Leonardo da Vinci";</p>
+            <p>"What's greater gift than the love of a cat. - Charles Dickens"</p>
+        </aside>
+        <main class="main">
+            <p class="main-2 p">Cats are amazing creatures. They are soft, fluffy, and adorable. They also have a unique
+                way of showing love. They may not always cuddle with you or lick your face, but they will always be
+                there for you. They will greet you when you come home, sit on your lap when you need comfort, and purr
+                when you stroke their fur. Cats are loyal, independent, and smart. They can teach you a lot about life
+                and love. They can inspire you to be more adventurous, curious, and playful. They can also make you
+                laugh with their funny antics and expressions. Cats are more than just pets, they are family. They are
+                the best companions you can ever have.</p>
+            <p class="main-3 p">
+                Did you
+                know that cats also have the power to make our dreams come true? Yes, it's true. Cats are magical beings
+                that can help us achieve our goals and aspirations. How do they do that, you ask? Well, let me tell you.
+
+                First of all, cats teach us to be confident and independent. They don't care what others think of them,
+                they just do what they want. They don't need anyone's approval or permission, they just follow their
+                instincts. They are not afraid to take risks or try new things. They are not held back by doubts or
+                fears. They are bold and adventurous. They are leaders, not followers.
+
+
+                So you see, cats are more than just cute and cuddly pets. They are wise and wonderful mentors. They are
+                loyal and loving friends. They are inspiring and empowering role models. If we follow their example, we
+                can make our dreams come true too. All we need is a little bit of cat-titude!
+            </p>
+            <p class="main-1 p">               Try to be curious and creative, like cats. They are always exploring and discovering new
+                things. They are always learning and growing. They are always finding new ways to have fun and express
+                themselves. They are not bored or complacent. They are not stuck in a rut or a routine. They are
+                flexible and adaptable. They are innovators, not imitators. And that are features required for realizing dreams.
+
+                Cats also shows us to be grateful and generous. They appreciate the simple things in life, like a
+                warm lap, a sunny spot, or a tasty treat. They don't take anything for granted, they cherish every
+                moment. They don't hoard or waste, they share and give. They are not greedy or selfish. They are not
+                stingy or spoiled. They are content and happy. They are givers, not takers.
+</p>
+        </main>
+        <aside class="right">
+            <p>“Cats seem to go on the principle that it never does any harm to ask for what you want.” – Joseph Wood Krutch</p>
+<p>“I believe cats to be spirits come to earth. A cat, I am sure, could walk on a cloud without coming through.” – Jules Verne</p>
+        </aside>
+    </div>
+    <footer>
+      
+    </footer>
+</body>
+
+
+</html>
